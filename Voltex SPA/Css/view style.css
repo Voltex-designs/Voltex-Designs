@@ -1,0 +1,199 @@
+/*style for the view page of Voltex SPA*/
+/*Remember to use the online version of Montserrat font*/
+
+/* https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/ */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body{
+    margin: 0; 
+    min-width: 50%;
+    background-color: whitesmoke;
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: medium;
+    color: black;
+}
+
+h1{
+    padding-top: 0.5em;
+}
+
+
+h2 {
+   margin-top: 1em;
+   margin-bottom: .5em;
+}
+span{
+    color: white;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+/* Control bootsrap styles */
+
+#voltex_navigation{
+    /* background-color: rgb(44, 120, 190); */
+    background-color: transparent;
+    border: none; 
+}
+
+#myTabs{
+    justify-content: center;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.tagline{
+    display: none;
+}
+#myTabs li a{
+    
+    font-weight: bold;
+}
+#bs-example-navbar-collapse-1{
+    border: none;
+   
+}
+
+.tab-pane{
+    margin-bottom: 5em;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+#carousel-container{ /*The size of the image slider*/
+height: 100%;
+width: 80%; 
+padding: 0;
+}
+
+#voltex_modal{
+    margin-bottom: 2em;
+}
+#submitSubscribe{
+    margin: .5em;
+}
+.modal-header{
+    background-color: rgb(44, 120, 190);
+    color: white;
+}
+#myModalLabel{
+    font-weight: bold;
+}
+#modal_close{
+    color: white;
+}
+
+.panel-primary{/*The small boxes that appear in the about and projects tab*/
+  margin-left: 20%;
+  margin-top: 1em;
+  width: 60%;
+  text-align: center;
+  padding: 0;
+  box-shadow: 2px 2px 10px 4px gray;
+}
+
+#head-logo{
+    padding-left: 0;
+    padding-top: 0;
+    margin-top: 0;
+    width: 70%;
+    height: 190%;
+    margin-left: 0;
+    margin-bottom: 1%;
+}
+
+/*footer of the page*/
+.footer {
+    padding-bottom: 1%;
+    text-align: center;
+    width: 100%;
+    background-color: transparent;
+  }
+
+#socialMedia{
+    margin-top: 1%;
+}
+
+.footImg{
+    height: 3%;
+    width: 3%;
+    margin-left: .5%;
+}
+.footImg:focus, .footImg:hover{
+    border-style: solid;
+    border-color: rgb(44, 120, 190);
+    border-radius: 100%;
+    border-width: 4px;
+    border-spacing: 0;
+}
+#footer-text{
+    text-align: center; 
+    padding: 1.5%; 
+    margin: 2% ; 
+    margin-bottom: 0;
+    /* font-weight: bold; */
+    background-color:rgb(44, 120, 190); 
+    color: white;
+    border-radius: 5px;
+    bottom: 0;
+    font-size: small;
+}
+
+/* End of bootstrap */
+
+/*It is rendered from from the js file to animate the H1*/
+.bigger{ 
+    font-size: xx-large;
+}
+.fLinks{
+   
+   position: sticky;
+   text-align: right;
+}
+
+
+/*Use this code to develope all the feautures you want
+ for your mobile website/application. e.g the navigation
+ and the footer*/
+@media only screen and (max-width: 600px) {
+    #carousel-container{
+        height: 50%;
+        width: 100%; 
+        margin-left: 0;
+        margin-right: 0;
+        }
+    .Titterlinks {
+        position: relative;
+        margin-left: 5%;
+        text-align: center;
+        width: 100%;
+    }
+    .footImg{
+        height: 9%;
+        width: 9%;
+        margin-left: 1%;
+    }
+    #head-logo{
+        margin: auto;
+        display: flex;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .navbar-brand{
+        margin-bottom: 2%;
+    }
+    .panel-primary{/*The small boxes that appear in the about and projects tab*/
+        margin-left: 5%;
+        width: 90%;
+      }
+}
+
+ 
